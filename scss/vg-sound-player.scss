@@ -1,0 +1,92 @@
+[data-vg-sound-player]{
+  position:relative;
+  font-family:Source Sans Pro, Helvetica, Arial, Sans-Serif;
+  font-weight:100;
+  text-align:center;
+  color:white;
+  max-width:500px;
+  width:100%;
+  &:active{
+    cursor:pointer;
+  }
+  .vg-time-label{
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:1px;
+    pointer-events:none;
+    font-size:13px;
+  }
+  button, h3, .hex{
+    position:absolute;
+  }
+  svg *{
+    fill:none;
+    stroke:#999;
+    stroke-width:3px;
+  }
+  .hex{
+    width:90px;
+    height:100px;
+    left:50%;
+    top:50%;
+    margin-top:-50px;
+    margin-left:-45px;
+  }
+  button{
+    width:90px;
+    height:100px;
+    top:50%;
+    padding:0;
+    margin-top:-50px;
+    margin-left:-45px;
+    background:transparent;
+    border:none;
+    &.play{
+      left:50%;
+    }
+    &.prev{
+      left:20%;
+    }
+    &.next{
+      left:80%;
+    }
+    &.shaded svg *, &.shaded:hover svg *{
+      stroke : #555;
+    }
+    &:focus{
+      outline:none;
+    }
+    &:hover{
+      cursor:pointer;
+      svg *{
+        stroke:#fff;
+      }
+    }
+    &.shaded:hover{
+      cursor:default;
+    }
+  }
+  h3{
+    left:12%;
+    right:12%;
+    bottom:13%;
+    font-size:20px;
+    font-weight:400;
+  }
+  &.playing svg.hex *{
+    stroke:#b24d49;
+  }
+  canvas{
+    position:absolute;
+    top:0;
+    left:0;
+  }
+}
+[data-vg-sound-player], [data-vg-sound-player] *{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;    
+}
