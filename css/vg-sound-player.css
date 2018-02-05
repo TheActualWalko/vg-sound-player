@@ -1,0 +1,74 @@
+[data-vg-sound-player] {
+  position: relative;
+  font-family: Source Sans Pro, Helvetica, Arial, Sans-Serif;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  width: 100%; }
+  [data-vg-sound-player]:active {
+    cursor: pointer; }
+  [data-vg-sound-player] .vg-time-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1px;
+    pointer-events: none;
+    font-size: 13px; }
+  [data-vg-sound-player] button, [data-vg-sound-player] h3, [data-vg-sound-player] .hex {
+    position: absolute; }
+  [data-vg-sound-player] svg * {
+    fill: none;
+    stroke: #999;
+    stroke-width: 3px; }
+  [data-vg-sound-player] .hex {
+    width: 90px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -45px; }
+  [data-vg-sound-player] button {
+    width: 90px;
+    height: 100px;
+    top: 50%;
+    padding: 0;
+    margin-top: -50px;
+    margin-left: -45px;
+    background: transparent;
+    border: none; }
+    [data-vg-sound-player] button.play {
+      left: 50%; }
+    [data-vg-sound-player] button.prev {
+      left: 20%; }
+    [data-vg-sound-player] button.next {
+      left: 80%; }
+    [data-vg-sound-player] button.shaded svg *, [data-vg-sound-player] button.shaded:hover svg * {
+      stroke: #555; }
+    [data-vg-sound-player] button:focus {
+      outline: none; }
+    [data-vg-sound-player] button:hover {
+      cursor: pointer; }
+      [data-vg-sound-player] button:hover svg * {
+        stroke: #fff; }
+    [data-vg-sound-player] button.shaded:hover {
+      cursor: default; }
+  [data-vg-sound-player] h3 {
+    left: 12%;
+    right: 12%;
+    bottom: 13%;
+    font-size: 20px;
+    font-weight: 400; }
+  [data-vg-sound-player].playing svg.hex * {
+    stroke: #b24d49; }
+  [data-vg-sound-player] canvas {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+[data-vg-sound-player], [data-vg-sound-player] * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
